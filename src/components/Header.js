@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 
 const Header = () => {
 	return (
-		<div className="grid grid-cols-3 border-b-2 grid-rows-1 h-16 bg-gradient-to-l from-indigo-100">
+		<div className="grid grid-cols-3 border-b-2 grid-rows-1 h-16">
 			<div className="border-r-2 p-5 flex flex-row justify-between items-center ">
 				<span className="text-xl">All Notes</span>
 				<Link to={"/add"}>

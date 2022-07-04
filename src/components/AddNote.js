@@ -37,7 +37,6 @@ const AddNote = ({ onSubmit }) => {
 
 	const onFormSubmit = e => {
 		e.preventDefault();
-
 		const newNote = {
 			id: uuid(),
 			title,
@@ -46,7 +45,6 @@ const AddNote = ({ onSubmit }) => {
 			time,
 		};
 		onSubmit(newNote);
-
 		navigate("/");
 	};
 

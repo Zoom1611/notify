@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, useNavigate } from "react-router-dom";
-import "../index.css";
 
 const NoteList = ({ notes, removeNote }) => {
 	const navigate = useNavigate();
@@ -50,9 +49,7 @@ const NoteList = ({ notes, removeNote }) => {
 
 	const deleteNote = id => {
 		removeNote(id);
-
 		localStorage.setItem("currentId", JSON.stringify(""));
-
 		navigate("/");
 	};
 

@@ -23,9 +23,7 @@ const EditNote = ({ notes, editNote }) => {
 	useEffect(() => {
 		const noteId = currentNoteId;
 		const selectedNote = notes.find(note => note.id === noteId);
-
 		localStorage.setItem("currentId", JSON.stringify(currentNoteId));
-
 		setSelectedNote({ ...selectedNote });
 	}, [currentNoteId, notes]);
 
@@ -39,11 +37,8 @@ const EditNote = ({ notes, editNote }) => {
 
 	const onSubmit = e => {
 		e.preventDefault();
-
 		editNote(selectedNote);
-
 		localStorage.setItem("currentId", JSON.stringify(""));
-
 		navigate("/");
 	};
 

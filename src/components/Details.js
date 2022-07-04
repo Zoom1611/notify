@@ -1,8 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Details = () => {
 	const selectedNote = JSON.parse(localStorage.getItem("selectedNote"));
-	console.log(selectedNote);
 
 	return (
 		<div>
@@ -20,6 +20,10 @@ const Details = () => {
 			</p>
 		</div>
 	);
+};
+
+Details.propTypes = {
+	selectedNote: PropTypes.object,
 };
 
 export default Details;
