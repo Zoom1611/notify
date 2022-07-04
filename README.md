@@ -27,8 +27,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-### Description
+## Description
 
 Notify is application for creating notes. It is saving them in local storage. Every created note is editable and deletable. For each created note, it is possible to see the time and date when it was created.
+
+## Application URL
+
+```
+https://zoom-notify.netlify.app/
+```
 
 #### Application creator: `Ivan Razum <ivanrazum1611@gmail.com>`

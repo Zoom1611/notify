@@ -57,7 +57,7 @@ const AddNote = ({ onSubmit }) => {
 			>
 				<div className="mb-4">
 					<input
-						className="appearance-none text-xl border-b-2 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-400"
+						className="appearance-none text-xl border-b-2 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-400 h-11"
 						type="text"
 						id="title"
 						required
