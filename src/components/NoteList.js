@@ -5,8 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 const NoteList = ({ notes, removeNote }) => {
 	const navigate = useNavigate();
 
-	console.log(notes);
-
 	let renderNotes;
 	if (notes.length) {
 		renderNotes = notes.map(note => {

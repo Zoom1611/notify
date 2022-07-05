@@ -10,7 +10,6 @@ import notify from "../images/notify.jpg";
 
 const App = () => {
 	const [notes, setNotes] = useState([]);
-	console.log(notes);
 
 	const pathName = window.location.pathname;
 	localStorage.setItem("pathName", JSON.stringify(pathName));
