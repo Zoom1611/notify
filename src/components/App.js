@@ -10,13 +10,16 @@ import notify from "../images/notify.jpg";
 
 const App = () => {
 	const [notes, setNotes] = useState([]);
+	console.log(notes);
 
 	const pathName = window.location.pathname;
 	localStorage.setItem("pathName", JSON.stringify(pathName));
 
 	useEffect(() => {
 		const data = localStorage.getItem("notes");
-		setNotes(JSON.parse(data));
+		if (data) {
+			setNotes(JSON.parse(data));
+		}
 	}, []);
 
 	useEffect(() => {
@@ -69,13 +72,13 @@ const App = () => {
 						/>
 						<Route
 							path="/add"
-							element={<AddNote onSubmit={handleOnFormSubmit} />}
+							element={<AddNote notes={notes} onSubmit={handleOnFormSubmit} />}
 						/>
 						<Route
 							path="/edit/:id"
 							element={<EditNote notes={notes} editNote={handleEditNote} />}
 						/>
-						<Route path="/details" element={<Details notes={notes} />} />
+						<Route path="/details" element={<Details />} />
 					</Routes>
 				</div>
 			</div>
